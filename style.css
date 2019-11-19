@@ -42,11 +42,19 @@ a {
   display: block;
   background:rgba(196,196,196,0.2)
 }
+.Membership{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  
+}
+
 
 .membermap{
   display: block;
   max-width: 800px;
   margin: 0 auto;
+
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  
 }
 
 
