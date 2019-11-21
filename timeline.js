@@ -133,7 +133,7 @@ jQuery(document).ready(function ($) {
                 distanceNorm = Math.round(distance / timelineComponents['eventsMinLapse']) + 2;
             timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm * min + 'px');**/
             var lag=25;
-            timelineComponents['timelineEvents'].eq(i).css('left', lag + (7225 - 2 * lag) / min / (timelineComponents['timelineDates'].length-1)*i*min + 'px'); //7225 full line length
+            timelineComponents['timelineEvents'].eq(i).css('left', lag + (7225 - 4 * lag) / min / (timelineComponents['timelineDates'].length-1)*i*min + 'px'); //7225 full line length
         } 
     }
 
