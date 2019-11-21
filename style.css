@@ -73,41 +73,34 @@ a {
 .Membership{
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
 }
-.EOIR{text-align: center;
+.EOIR{
+  text-align: center;
   color: white;
-  background: repeating-linear-gradient(
-    45deg,
-    #606dbc,
-    #606dbc 10px,
-    #465298 10px,
-    #465298 20px
-  );
-
+  background: #001c54;
+  border-color: #ffdf16;
+  border-style: solid;
+  border-width: 1px;
+  border-radius:2px;
 }
 
-.TA{text-align: center;
+.TA{
+  text-align: center;
   color: white;
-  background: repeating-linear-gradient(
-    45deg,
-    #606dbc,
-    #606dbc 10px,
-    #465298 10px,
-    #465298 20px
-  );
-
+  background: #001c54;
+  border-color: #ffdf16;
+  border-style: solid;
+  border-width: 1px;
+  border-radius:2px;
 }
-.AEOI{text-align: center;
+.AEOI{
+  text-align: center;
   color: white;
-  background: repeating-linear-gradient(
-    45deg,
-    #606dbc,
-    #606dbc 10px,
-    #465298 10px,
-    #465298 20px
-  );
-
+  background: #001c54;
+  border-color: #ffdf16;
+  border-style: solid;
+  border-width: 1px;
+  border-radius:2px;
 }
-
 
 
 .membermap{
@@ -508,4 +501,8 @@ Main Components
     -o-transform: translateX(0%);
     transform: translateX(0%);
   }
+}
+
+p.phaseFont{
+  margin:0;
 }
