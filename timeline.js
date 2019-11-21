@@ -129,9 +129,10 @@ jQuery(document).ready(function ($) {
 
     function setDatePosition(timelineComponents, min) {
         for (i = 0; i < timelineComponents['timelineDates'].length; i++) {
-            var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
+            /*var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
                 distanceNorm = Math.round(distance / timelineComponents['eventsMinLapse']) + 2;
-            timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm * min + 'px');
+            timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm * min + 'px');*/
+            timelineComponents['timelineEvents'].eq(i).css('left',5 * i*min + 'px');
         }
     }
 
@@ -243,7 +244,7 @@ jQuery(document).ready(function ($) {
             var distance = daydiff(dates[i - 1], dates[i]);
 
             //set the distance between points on the screen. Currently multiplied by 2 to reduce space 
-            dateDistances.push(distance*1.5);
+            dateDistances.push(distance*1.25);
             //dateDistances.push(5000000000);
         }
         return Math.min.apply(null, dateDistances);
