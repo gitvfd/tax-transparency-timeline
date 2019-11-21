@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -13,8 +13,9 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6em;
+  font-family: "Lato", sans-serif;
+    font-weight: 300;
   color: #ffffff;
   background-color: #f8f8f8;
   background-image: url("img/ForumTaxTransparency.jpg");
@@ -23,11 +24,13 @@ body {
 }
 h1{
   font-size:3vw;
-  font-family: "Playfair Display", serif;
+  font-family: "Lato", serif;
+    font-weight: 300;
   margin: 1% 1% 1% 1%;
 }
 h2{
-  font-family: "Playfair Display", serif;
+  font-family: "Lato", serif;
+    font-weight: 300;
   font-size:1.5vw;
   font-style:italic;
   margin: 1% 1% 1% 1%;
@@ -66,14 +69,14 @@ a {
 
 
 
-.Events,.NewsEvents,.Phases,.Membership,.Impact,.Plenaries,.Outputs{
+.Events,.NewsEvents,.Membership,.Impact,.Plenaries,.Outputs{
   display: block;
   background:rgba(196,196,196,0.2)
 }
 .Membership{
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
 }
-.EOIR{
+.phaseSeq{
   text-align: center;
   color: white;
   background: #001c54;
@@ -83,26 +86,9 @@ a {
   border-radius:2px;
 }
 
-.TA{
-  text-align: center;
-  color: white;
-  background: #001c54;
-  border-color: #ffdf16;
-  border-style: solid;
-  border-width: 1px;
-  border-radius:2px;
-}
-.AEOI{
-  text-align: center;
-  color: white;
-  background: #001c54;
-  border-color: #ffdf16;
-  border-style: solid;
-  border-width: 1px;
-  border-radius:2px;
-}
-
-
+.EIOR{color:orange;}
+.TA{color:greenyellow}
+.AETI{color:purple}
 .membermap{
   display: block;
   max-width: 100%;
@@ -139,7 +125,7 @@ Main Components
 }
 .cd-horizontal-timeline .timeline {
   position: relative;
-  height: 100px;
+  height: 120px;
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
@@ -174,7 +160,7 @@ Main Components
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 49px;
+  top: 60px;
   height: 2px;
   /* width will be set using JavaScript */
   background: #dfdfdf;
@@ -210,8 +196,8 @@ Main Components
   bottom: 0;
   z-index: 2;
   text-align: center;
-  font-size: 1.3rem;
-  padding-bottom: 15px;
+  font-size: 1.6rem;
+  padding-bottom: 20px;
   color: #e0e0e0;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
@@ -394,8 +380,8 @@ Main Components
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
   font-size: 2.6rem;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
+  font-family: "Lato", serif;
+  font-weight: 500;
   line-height: 1.2;
 }
 .cd-horizontal-timeline .events-content em {
@@ -404,13 +390,14 @@ Main Components
   margin: 10px auto;
 }
 .cd-horizontal-timeline .events-content em::before {
-  content: '- ';
+  content: ' ';
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 1.8rem;
   color: #e0e0e0;
   padding:1em 1em;
 }
+
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
 }
@@ -503,6 +490,7 @@ Main Components
   }
 }
 
-p.phaseFont{
+.phaseFont{
   margin:0;
+  color:orange;
 }
