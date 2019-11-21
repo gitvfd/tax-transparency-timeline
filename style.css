@@ -9,7 +9,7 @@ Primary style
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 65%;
 }
 
 body {
@@ -17,12 +17,40 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #ffffff;
   background-color: #f8f8f8;
-  background-image: url("img/ForumTaxTransparency_Fond01-CMJN_FINAL-midsize.png");
+  background-image: url("img/ForumTaxTransparency.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
+h1{
+  font-size:3vw;
+  font-family: "Playfair Display", serif;
+  margin: 1% 1% 1% 1%;
+}
+h2{
+  font-family: "Playfair Display", serif;
+  font-size:1.5vw;
+  font-style:italic;
+  margin: 1% 1% 1% 1%;
 
+}
 a {
   color: #ffdf16;
   text-decoration: none;
+}
+#wrapper{
+  margin:-20px;
+    overflow: hidden;
+    font-style:italic;
+    padding-left:1%;
+    padding-right:1%;
+
+  color: #ffdf16;
+}
+#c1 {
+   float:left;
+}
+#c2 {
+    float: right
 }
 
 #back,#forward{
@@ -44,20 +72,57 @@ a {
 }
 .Membership{
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
-  
 }
+.EOIR{text-align: center;
+  color: white;
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+
+}
+
+.TA{text-align: center;
+  color: white;
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+
+}
+.AEOI{text-align: center;
+  color: white;
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+
+}
+
 
 
 .membermap{
   display: block;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
 
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
   
 }
 
-
+.infographic{
+  font-size:3em;
+  color:#ffdf16;
+}
 /* -------------------------------- 
 
 Main Components 
@@ -328,7 +393,7 @@ Main Components
   animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-  max-width: 800px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -349,8 +414,9 @@ Main Components
   content: '- ';
 }
 .cd-horizontal-timeline .events-content p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #e0e0e0;
+  padding:1em 1em;
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
