@@ -17,7 +17,7 @@ body {
   font-family: "Lato", sans-serif;
     font-weight: 300;
   color: #ffffff;
-  background-color: #f8f8f8;
+  background-color: #011c53;
   background-image: url("img/ForumTaxTransparency.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -87,8 +87,8 @@ a {
 }
 
 .EIOR{color:orange;}
-.TA{color:greenyellow}
-.AETI{color:purple}
+.TA{color:lightgreen}
+.AETI{color:#BA94DB}
 .membermap{
   display: block;
   max-width: 100%;
@@ -113,6 +113,8 @@ a {
 Main Components 
 
 -------------------------------- */
+
+
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 2em auto;
@@ -136,11 +138,14 @@ Main Components
   max-width: 90%;
   margin: 0 auto;
 }
+
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
   height: 100%;
   margin: 0 40px;
   overflow: hidden;
+
+
 }
 .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
   /* these are used to create a shadow effect at the sides of the timeline */
