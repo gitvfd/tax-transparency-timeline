@@ -105,7 +105,8 @@ a {
   
 }
 .infographic{
-  font-size:3em;
+  font-size:2em;
+  font-weight:400;
   color:#ffdf16;
 }
 /* -------------------------------- 
@@ -383,7 +384,7 @@ Main Components
   animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
